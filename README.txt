@@ -3,8 +3,8 @@ Contributors: alvindcaesar
 Donate link: https://alvindcaesar.com
 Tags: generatepress, generateblocks
 Requires at least: 5.0.0
-Tested up to: 6.1.1
-Stable tag: 1.0.3
+Tested up to: 6.4.2
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,9 @@ This plugin adds a handy "GP Shortcuts" menu item in the WP admin bar for quickl
 Ensure you have GeneratePress theme installed and active.
 
 == Changelog ==
+
+= 1.0.4 =
+* Compatibility with 6.4.2.
 
 = 1.0.3 =
 * Fixed an issue where the `GP Shortcuts` admin bar menu would not show up if the child theme's folder name was not using the default name.
