@@ -4,16 +4,16 @@ class GP_Free_Menu
 {
   public static function main()
   {
-    $iconurl = GP_SHORTCUTS_URL . "assets/images/gp-logo.png";
+    // $iconurl = GP_SHORTCUTS_URL . "assets/images/gp-logo.png";
 
-    $iconspan = '<span class="gp-ab-icon" style="
-      float:left; width:22px !important; height:22px !important;
-      margin-left: 5px !important; margin-top: 5px !important;
-      background-image:url(\'' . $iconurl . '\')!important;background-size: contain;background-repeat: no-repeat;"></span>';
+    // $iconspan = '<span class="gp-ab-icon" style="
+    //   float:left; width:22px !important; height:22px !important;
+    //   margin-left: 5px !important; margin-top: 5px !important;
+    //   background-image:url(\'' . $iconurl . '\')!important;background-size: contain;background-repeat: no-repeat;"></span>';
 
     return array(
       'id'    => 'gp-shortcuts-main',
-      'title' => $iconspan . __( 'GP Shortcuts', 'gp-shortcuts' ),
+      'title' => __( 'GP Shortcuts', 'gp-shortcuts' ),
       'href'  => '#',
     );
   }
