@@ -52,7 +52,7 @@ class GP_Shortcuts
       unset( $args[7] ); // GP_Pro_Menu::add_elements_menu()
     } 
     
-    if ( admin_url( "themes.php?page=generatepress-library" ) != menu_page_url( "generatepress-library", false ) ) {
+    if ( get_option( 'generate_package_site_library' ) != 'activated' ) {
       unset( $args[12] ); // GP_Pro_Shortcuts::site_library()
     }
 
