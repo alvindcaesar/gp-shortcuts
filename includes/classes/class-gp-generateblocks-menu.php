@@ -28,7 +28,7 @@ class GP_Generateblocks_Menu
       'parent'=> 'gp-generateblocks-menu',
       'id'    => 'gp-generateblocks-local-patterns',
       'title' => __( 'Local Patterns', 'gp-shortcuts' ),
-      'href'  => admin_url( "edit.php?post_type=gblocks_templates" ),
+      'href'  => admin_url( "edit.php?post_type=wp_block" ),
     );
   }
 
@@ -38,7 +38,7 @@ class GP_Generateblocks_Menu
       'parent'=> 'gp-generateblocks-menu',
       'id'    => 'gp-generateblocks-global-styles',
       'title' => __( 'Global Styles', 'gp-shortcuts' ),
-      'href'  => admin_url( "edit.php?post_type=gblocks_global_style" ),
+      'href'  => admin_url( "admin.php?page=generateblocks-styles" ),
     );
   }
 

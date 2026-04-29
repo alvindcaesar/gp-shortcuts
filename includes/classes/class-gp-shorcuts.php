@@ -44,20 +44,17 @@ class GP_Shortcuts
     }
 
     if ( ! class_exists( "GenerateBlocks_Pro_Singleton" ) ) {
+      unset( $args[17] ); // GP_Generateblocks_Menu::local_patterns_menu()
       unset( $args[18] ); // GP_Generateblocks_Menu::global_styles_menu()
       unset( $args[19] ); // GP_Generateblocks_Menu::assets_library_menu()
     }
 
     if ( ! post_type_exists( "gp_elements" ) ) {
       unset( $args[7] ); // GP_Pro_Menu::add_elements_menu()
-    } 
-    
-    if ( get_option( 'generate_package_site_library' ) != 'activated' ) {
-      unset( $args[12] ); // GP_Pro_Shortcuts::site_library()
     }
 
-    if ( ! post_type_exists( "gblocks_templates" ) ) {
-      unset( $args[17] ); // GP_Generateblocks_Menu::local_patterns_menu()
+    if ( get_option( 'generate_package_site_library' ) != 'activated' ) {
+      unset( $args[12] ); // GP_Pro_Shortcuts::site_library()
     }
 
     foreach ( $args as $arg ) {
